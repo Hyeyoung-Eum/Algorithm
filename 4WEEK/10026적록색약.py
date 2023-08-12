@@ -13,8 +13,8 @@ def bfs(x, y):
     q.append((x, y))
     while q:
         x, y = q.popleft()
-        dxdy = [(0, -1), (0, 1), (-1, 0), (1, 0)]
-        for dx, dy in dxdy: #상하좌우 처리
+        dxdy = [(0, -1), (0, 1), (-1, 0), (1, 0)] #상하좌우 처리
+        for dx, dy in dxdy: 
             nx = x + dx
             ny = y + dy
             if -1 < nx < n and -1 < ny < n:
